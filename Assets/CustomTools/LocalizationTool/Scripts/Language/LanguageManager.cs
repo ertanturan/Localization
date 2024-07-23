@@ -80,17 +80,17 @@ public static class LanguageManager
 
     private static void SetDefaultLanguage(SystemLanguage lang)
     {
-        if (_languageDictionary.ContainsKey(lang))
+        if (_languageDictionary.TryGetValue(lang, out var selectedLanguage))
         {
-            SelectedLanguage = _languageDictionary[lang];
-            _defaultLanguage = _languageDictionary[lang];
+            SelectedLanguage = selectedLanguage;
+            _defaultLanguage = lang;
             SelectedSystemLanguage = lang;
         }
         else
         {
             Debug.Log("Dictionary does not contain this language switching to English...");
             SelectedLanguage = _languageDictionary[SystemLanguage.English];
-            _defaultLanguage = _languageDictionary[SystemLanguage.English];
+            _defaultLanguage = SystemLanguage.English;
             SelectedSystemLanguage = SystemLanguage.English;
         }
     }
