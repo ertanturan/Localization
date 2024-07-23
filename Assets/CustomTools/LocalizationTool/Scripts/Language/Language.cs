@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using TMPro;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(
     fileName = "New Language",
@@ -13,4 +15,8 @@ public class Language : ScriptableObject
     public Sprite Icon;
 
     public SystemLanguage systemLanguageType;
+
+    public bool UseAssignedFont;
+
+    public TMP_FontAsset Font;
 }

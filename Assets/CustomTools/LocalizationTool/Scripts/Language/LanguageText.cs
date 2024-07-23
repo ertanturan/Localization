@@ -30,15 +30,22 @@ public class LanguageText : TextComponent
         if (_langDependentText != null)
             SetText(LanguageManager.GetText(_langDependentText));
 
-        LanguageManager.OnLanguageChange += (language) => {
-            if (this && gameObject && _langDependentText != null)
-                SetMultiLanguageText(_langDependentText);
-        };
+        LanguageManager.OnLanguageChange += SetupLanguage;
+    }
+    
+    private void SetupLanguage(Language language)
+    {
+        if (this && gameObject && _langDependentText != null)
+            SetMultiLanguageText(_langDependentText);
+
+        if (language.UseAssignedFont && TextPro.font != language.Font)
+        {
+            TextPro.font = language.Font;
+        }
     }
 
     public void SetMultiLanguageText(LanguageDependentText text)
     {
-        Init();
         if(TextPro)
             TextPro.alignment = GetAlignment(LanguageManager.SelectedLanguage.Alphabet);
         _langDependentText = text;
