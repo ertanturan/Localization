@@ -32,16 +32,11 @@ public class LanguageText : TextComponent
 
         LanguageManager.OnLanguageChange += SetupLanguage;
     }
-    
+
     private void SetupLanguage(Language language)
     {
         if (this && gameObject && _langDependentText != null)
             SetMultiLanguageText(_langDependentText);
-
-        if (language.UseAssignedFont && TextPro.font != language.Font)
-        {
-            TextPro.font = language.Font;
-        }
     }
 
     public void SetMultiLanguageText(LanguageDependentText text)

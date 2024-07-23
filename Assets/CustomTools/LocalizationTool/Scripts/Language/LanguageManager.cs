@@ -6,9 +6,7 @@ using UnityEngine.Video;
 
 public static class LanguageManager
 {
-
-    private static Dictionary<SystemLanguage, Language> _languageDictionary
-        = new Dictionary<SystemLanguage, Language>();
+    private static Dictionary<SystemLanguage, Language> _languageDictionary = new();
 
     public static AlphabetFontMatrix AlphabetFontMatrix { get; private set; }
 
@@ -18,24 +16,29 @@ public static class LanguageManager
 
     public static event Action<Language> OnLanguageChange;
 
-    private static Language _defaultLanguage;
+    private static SystemLanguage _defaultLanguage = SystemLanguage.English;
 
 
     [RuntimeInitializeOnLoadMethod]
     private static void OnLoad()
     {
-        Language[] temp = new List<Language>(
-            Resources.LoadAll<Language>("Data/Localization/Languages")).ToArray();
+        List<Language> supportedLanguages = new List<Language>(
+            Resources.LoadAll<Language>("Data/Localization/Languages"));
 
-        foreach (Language lang in temp)
+        foreach (Language lang in supportedLanguages)
         {
             _languageDictionary.Add(lang.systemLanguageType, lang);
         }
 
-        AlphabetFontMatrix = Resources.Load<AlphabetFontMatrix>(
-            "Data/Localization/AlphabetFontMatrix");
-
-        SetDefaultLanguage(Application.systemLanguage);
+        AlphabetFontMatrix = Resources.Load<AlphabetFontMatrix>("Data/Localization/AlphabetFontMatrix");
+        if (supportedLanguages.Any(x => x.systemLanguageType == Application.systemLanguage))
+        {
+            SetDefaultLanguage(Application.systemLanguage);
+        }
+        else
+        {
+            SetDefaultLanguage(_defaultLanguage);
+        }
     }
 
     public static void ToggleLanguage()
@@ -52,6 +55,7 @@ public static class LanguageManager
                 {
                     SetDefaultLanguage(_languageDictionary.ElementAt(0).Key);
                 }
+
                 break;
             }
         }
@@ -88,8 +92,6 @@ public static class LanguageManager
             SelectedLanguage = _languageDictionary[SystemLanguage.English];
             _defaultLanguage = _languageDictionary[SystemLanguage.English];
             SelectedSystemLanguage = SystemLanguage.English;
-
         }
     }
-
 }
