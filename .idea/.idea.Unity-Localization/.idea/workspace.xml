@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d57bacea-1b80-4d5d-beea-58ddf17b7b1d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.services.core/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Resources/RenderTeexture/VideoRender.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Resources/RenderTeexture/VideoRender.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Scripts/Language/AlphabetFontMatrix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Scripts/Language/AlphabetFontMatrix.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Scripts/Language/LanguageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Scripts/Language/LanguageManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Scripts/Language/LanguageText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Scripts/Language/LanguageText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Localization/AlphabetFontMatrix/Matrix.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/Localization/AlphabetFontMatrix/Matrix.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Fonts &amp; Materials/segoeui-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Fonts &amp; Materials/segoeui-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Fonts &amp; Materials/segoeui-Semibold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Fonts &amp; Materials/segoeui-Semibold SDF.asset" afterDir="false" />
+    </list>
+    <list id="7fe77217-8b0d-4695-9d78-c9553486519a" name="Rider BS" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="61dd7001-8fbf-4624-9fab-c0724faa3a7c" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd3a94e80f824c43a87bf974a59a8abb175c00/48/002d15b4/SystemLanguage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/CustomTools/LocalizationTool/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/CustomTools/LocalizationTool/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/CustomTools/LocalizationTool/Scripts/Language/Language.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/CustomTools/LocalizationTool/Scripts/Language/LanguageManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/CustomTools/LocalizationTool/Scripts/Language/LanguageText.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/Resources/Data/Localization/AlphabetFontMatrix/Matrix.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/Resources/Fonts &amp; Materials/segoeui-Regular SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/Resources/Fonts &amp; Materials/segoeui-Semibold SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Assets/Resources/Fonts &amp; Materials/segoeui-Semibold SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jack/Desktop/Unity/Unity-Localization/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2jefDLDiOJde1ssoPTd4ieZPnfx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "RiderCSharpLiveTemplatesSettingsId",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\jack\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\jack\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\jack\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.31f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\jack\Desktop\Unity\Unity-Localization -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\jack\Desktop\Unity\Unity-Localization" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.31f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\jack\Desktop\Unity\Unity-Localization -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\jack\Desktop\Unity\Unity-Localization" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10552">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="10552" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d57bacea-1b80-4d5d-beea-58ddf17b7b1d" name="Changes" comment="" />
+      <changelist id="7fe77217-8b0d-4695-9d78-c9553486519a" name="Rider BS" comment="" />
+      <created>1721752344110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721752344110</updated>
+      <workItem from="1721752345543" duration="1396000" />
+      <workItem from="1721811605346" duration="27000" />
+      <workItem from="1721811640822" duration="1926000" />
+    </task>
+    <task id="LOCAL-00001" summary="added font option should people want to use it">
+      <option name="closed" value="true" />
+      <created>1721752779234</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721752779235</updated>
+    </task>
+    <task id="LOCAL-00002" summary="imported rider package">
+      <option name="closed" value="true" />
+      <created>1721752811287</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721752811287</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pushed progress">
+      <option name="closed" value="true" />
+      <created>1721753734618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721753734618</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed matrix">
+      <option name="closed" value="true" />
+      <created>1721753742426</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721753742426</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Sprint-1-Maintenance" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="added font option should people want to use it" />
+    <MESSAGE value="imported rider package" />
+    <MESSAGE value="pushed progress" />
+    <MESSAGE value="fixed matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Scripts/Language/LanguageManager.cs</url>
+          <line>72</line>
+          <properties documentPath="C:\Users\jack\Desktop\Unity\Unity-Localization\Assets\CustomTools\LocalizationTool\Scripts\Language\LanguageManager.cs" containingFunctionPresentation="Method 'ToggleLanguage'">
+            <startOffsets>
+              <option value="2216" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2345" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/CustomTools/LocalizationTool/Scripts/Language/LanguageManager.cs</url>
+          <line>44</line>
+          <properties documentPath="C:\Users\jack\Desktop\Unity\Unity-Localization\Assets\CustomTools\LocalizationTool\Scripts\Language\LanguageManager.cs" containingFunctionPresentation="Method 'Initialize'">
+            <startOffsets>
+              <option value="1385" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1469" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
