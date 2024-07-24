@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public abstract class TextComponent : MonoBehaviour
 {
-
     private Text _text;
 
     private Text Text
@@ -18,31 +17,40 @@ public abstract class TextComponent : MonoBehaviour
         }
     }
 
-    private RTLTextMeshPro _textPro;
+    private RTLTextMeshPro _rtlText;
 
-    protected RTLTextMeshPro TextPro
+    protected RTLTextMeshPro RtlText
     {
         get
         {
-            if (!_textPro)
-                _textPro = GetComponent<RTLTextMeshPro>();
-            return _textPro;
+            if (!_rtlText)
+                _rtlText = GetComponent<RTLTextMeshPro>();
+            return _rtlText;
         }
         set
         {
-            _textPro = value;
+            _rtlText = value;
         }
     }
 
+    private bool _initialized;
+    
     protected virtual void Start()
     {
+        Init();
+    }
+
+    protected virtual void Init()
+    {
+        if (_initialized) return;
+        _initialized = true;
     }
 
     protected void SetText(string text, params object[] args)
     {
         if (Text == null)
         {
-            TextPro.text = string.Format(text, args);
+            RtlText.text = string.Format(text, args);
         }
         else
         {

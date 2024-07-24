@@ -1,78 +1,71 @@
 ﻿using UnityEngine;
 using TMPro;
-using RTLTMPro;
-
 
 public class LanguageText : TextComponent
 {
     private TextAlignmentOptions _latinAlignment;
 
-    [SerializeField]
-    private LanguageDependentText _langDependentText;
+    [SerializeField] private LanguageDependentText _langDependentText;
 
-    private bool _initialized;
-
-    protected override void Start()
+    protected override void Init()
     {
-        base.Start();
-        Init();
-    }
-
-    private void Init()
-    {
-        if (_initialized)
-            return;
-        _initialized = true;
-        if (TextPro)
+        base.Init();
+        if (RtlText)
         {
-            _latinAlignment = TextPro.alignment;
+            _latinAlignment = RtlText.alignment;
         }
-        if (_langDependentText != null)
-            SetText(LanguageManager.GetText(_langDependentText));
 
-        LanguageManager.OnLanguageChange += (language) => {
-            if (this && gameObject && _langDependentText != null)
-                SetMultiLanguageText(_langDependentText);
-        };
+        if (_langDependentText != null) SetText(LanguageManager.GetText(_langDependentText));
+
+        LanguageManager.OnLanguageChange += SetupLanguage;
     }
 
-    public void SetMultiLanguageText(LanguageDependentText text)
+    private void SetupLanguage(LanguageChangeEventArgs args)
     {
-        Init();
-        if(TextPro)
-            TextPro.alignment = GetAlignment(LanguageManager.SelectedLanguage.Alphabet);
-        _langDependentText = text;
-        if (_langDependentText != null)
-            SetText(LanguageManager.GetText(_langDependentText));
+        if (args.Font != RtlText.font)
+        {
+            RtlText.font = args.Font;
+        }
+
+        if (this && gameObject && _langDependentText != null) SetMultiLanguageText();
+    }
+
+    public void SetMultiLanguageText()
+    {
+        if (RtlText) RtlText.alignment = GetAlignment(LanguageManager.SelectedLanguage.Alphabet);
+        if (_langDependentText != null) SetText(LanguageManager.GetText(_langDependentText));
     }
 
     private TextAlignmentOptions GetAlignment(Alphabet alphabet)
     {
-        if (alphabet.ReadOrder == ReadOrder.LTR)
-            return _latinAlignment;
+        if (alphabet.ReadOrder == ReadOrder.LTR) return _latinAlignment;
         //RTL
-        if(_latinAlignment == TextAlignmentOptions.Center ||
-            _latinAlignment == TextAlignmentOptions.CenterGeoAligned|| 
-            _latinAlignment == TextAlignmentOptions.Top||
+        if (_latinAlignment == TextAlignmentOptions.Center ||
+            _latinAlignment == TextAlignmentOptions.CenterGeoAligned ||
+            _latinAlignment == TextAlignmentOptions.Top ||
             _latinAlignment == TextAlignmentOptions.Bottom)
         {
             return _latinAlignment;
         }
-        if(_latinAlignment == TextAlignmentOptions.Right
+
+        if (_latinAlignment == TextAlignmentOptions.Right
             || _latinAlignment == TextAlignmentOptions.Left)
         {
             return TextAlignmentOptions.Right;
         }
+
         if (_latinAlignment == TextAlignmentOptions.BottomRight
             || _latinAlignment == TextAlignmentOptions.BottomLeft)
         {
             return TextAlignmentOptions.BottomRight;
         }
+
         if (_latinAlignment == TextAlignmentOptions.TopRight
             || _latinAlignment == TextAlignmentOptions.TopLeft)
         {
             return TextAlignmentOptions.TopRight;
         }
+
         return _latinAlignment;
     }
 }
