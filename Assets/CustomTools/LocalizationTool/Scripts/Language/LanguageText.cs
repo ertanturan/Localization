@@ -7,21 +7,12 @@ public class LanguageText : TextComponent
 
     [SerializeField] private LanguageDependentText _langDependentText;
 
-    private bool _initialized;
-
-    protected override void Start()
+    protected override void Init()
     {
-        base.Start();
-        Init();
-    }
-
-    private void Init()
-    {
-        if (_initialized) return;
-        _initialized = true;
-        if (TextPro)
+        base.Init();
+        if (RtlText)
         {
-            _latinAlignment = TextPro.alignment;
+            _latinAlignment = RtlText.alignment;
         }
 
         if (_langDependentText != null) SetText(LanguageManager.GetText(_langDependentText));
@@ -31,9 +22,9 @@ public class LanguageText : TextComponent
 
     private void SetupLanguage(LanguageChangeEventArgs args)
     {
-        if (args.Font != TextPro.font)
+        if (args.Font != RtlText.font)
         {
-            TextPro.font = args.Font;
+            RtlText.font = args.Font;
         }
 
         if (this && gameObject && _langDependentText != null) SetMultiLanguageText();
@@ -41,7 +32,7 @@ public class LanguageText : TextComponent
 
     public void SetMultiLanguageText()
     {
-        if (TextPro) TextPro.alignment = GetAlignment(LanguageManager.SelectedLanguage.Alphabet);
+        if (RtlText) RtlText.alignment = GetAlignment(LanguageManager.SelectedLanguage.Alphabet);
         if (_langDependentText != null) SetText(LanguageManager.GetText(_langDependentText));
     }
 
