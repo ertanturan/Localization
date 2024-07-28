@@ -27,7 +27,6 @@ public class Language : ScriptableObject
 	#endif
 	}
 
-
 	private async void WaitAndMove()
 	{
 		await Task.Run(delegate
