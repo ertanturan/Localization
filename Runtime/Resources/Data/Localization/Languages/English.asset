@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: English
   Icon: {fileID: 21300000, guid: 897687dd29f493b46892de8b45a6044b, type: 3}
   systemLanguageType: 10
+  LanguageFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

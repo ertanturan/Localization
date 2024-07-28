@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: "\u0651\u0629\u064A\u064E\u0628\u0631\u064E\u0639\u0644\u0627"
   Icon: {fileID: 21300000, guid: b5b8fd12b775f2141a6c319e3ae8fd3e, type: 3}
   systemLanguageType: 1
+  LanguageFontAsset: {fileID: 11400000, guid: 3fbde2e562e333d488bc46986fc6f4f1, type: 2}
