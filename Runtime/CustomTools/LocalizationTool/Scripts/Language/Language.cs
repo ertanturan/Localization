@@ -2,8 +2,7 @@
 
 [CreateAssetMenu(
     fileName = "New Language",
-    menuName = "Localization/Language",
-    order = 2)]
+    menuName = "Localization/Language")]
 public class Language : ScriptableObject
 {
     public Alphabet Alphabet;

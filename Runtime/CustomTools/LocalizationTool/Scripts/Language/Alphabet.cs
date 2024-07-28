@@ -5,8 +5,7 @@ using UnityEngine;
 public enum ReadOrder { RTL, LTR }
 [CreateAssetMenu(
     fileName = "New Alphabet",
-    menuName = "Localization/Alphabet",
-    order = 2)]
+    menuName = "Localization/Alphabet")]
 public class Alphabet : ScriptableObject
 {
     public ReadOrder ReadOrder;

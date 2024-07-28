@@ -11,8 +11,7 @@ public struct LanguageVideoClipTuple
 }
 [CreateAssetMenu(
     fileName = "New Language Dependent Video",
-    menuName = "Localization/Language Dependent Video",
-    order = 1)]
+    menuName = "Localization/Language Dependent Video")]
 public class LanguageDependentVideo : ScriptableObject
 {
     public LanguageVideoClipTuple[] videoClips;

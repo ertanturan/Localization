@@ -11,8 +11,7 @@ public struct LanguageTextTuple
 }
 [CreateAssetMenu(
     fileName = "New Language Dependent Text",
-    menuName = "Localization/Language Dependent Text",
-    order = 1)]
+    menuName = "Localization/Language Dependent Text")]
 public class LanguageDependentText : ScriptableObject
 {
     public LanguageTextTuple[] texts;
