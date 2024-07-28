@@ -1,0 +1,12 @@
+{
+  "name": "com.ertanturan.unitylocalization",
+  "version": "1.0.1",
+  "displayName": "Unity Localization",
+  "description": "The tool is an internal localization system for unity-based projects with support of right-to-left (RTL) translation.",
+  "unity": "2022.3.39f1",
+  "author": {
+    "name": "Ertan Turan",
+    "email": "ertanturan@outlook.com",
+    "url": "https://github.com/ertanturan"
+  }
+}
