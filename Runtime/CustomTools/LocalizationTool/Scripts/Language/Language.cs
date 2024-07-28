@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Threading;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
@@ -27,9 +28,12 @@ public class Language : ScriptableObject
 	}
 
 
-	private void WaitAndMove()
+	private async void WaitAndMove()
 	{
-		Thread.Sleep(10);
+		await Task.Run(delegate
+		               {
+			               Thread.Sleep(100);
+		               });
 		string oldPath = AssetDatabase.GetAssetPath(this);
 		string dir = Path.Combine(Directory.GetCurrentDirectory(), "Assets/Resources/Data/Localization/Languages");
 
@@ -42,5 +46,6 @@ public class Language : ScriptableObject
 
 		string targetPath = $"Assets/Resources/Data/Localization/Languages/{name}.asset";
 		AssetDatabase.MoveAsset(oldPath, targetPath);
+		EditorUtility.FocusProjectWindow();
 	}
 }
