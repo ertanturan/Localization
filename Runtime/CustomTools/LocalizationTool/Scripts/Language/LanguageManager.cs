@@ -21,8 +21,6 @@ public static class LanguageManager
 {
     private static readonly Dictionary<SystemLanguage, Language> _LanguageDictionary = new();
 
-    private static AlphabetFontMatrix _AlphabetFontMatrix { get; set; }
-
     public static Language SelectedLanguage { get; private set; }
 
     private static SystemLanguage _SelectedSystemLanguage { get; set; }
@@ -34,14 +32,13 @@ public static class LanguageManager
     [RuntimeInitializeOnLoadMethod]
     private static void Initialize()
     {
-        List<Language> supportedLanguages = new List<Language>(Resources.LoadAll<Language>("Data/Localization/Languages"));
+        List<Language> supportedLanguages = new(Resources.LoadAll<Language>("Data/Localization/Languages"));
 
         foreach (Language lang in supportedLanguages)
         {
             _LanguageDictionary.Add(lang.systemLanguageType, lang);
         }
 
-        _AlphabetFontMatrix = Resources.LoadAll<AlphabetFontMatrix>("Data/Localization/AlphabetFontMatrix")[0];
         if (supportedLanguages.Any(x => x.systemLanguageType == Application.systemLanguage))
         {
             SetDefaultLanguage(Application.systemLanguage);
@@ -70,7 +67,7 @@ public static class LanguageManager
                 break;
             }
         }
-        LanguageChangeEventArgs eventArgs = new LanguageChangeEventArgs(SelectedLanguage, _AlphabetFontMatrix.GetFont(SelectedLanguage));
+        LanguageChangeEventArgs eventArgs = new(SelectedLanguage,SelectedLanguage.LanguageFontAsset);
         OnLanguageChange?.Invoke(eventArgs);
     }
 

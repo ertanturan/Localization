@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: Turkish
   Icon: {fileID: 21300000, guid: fbcc348ae10ca1e40aa86fe8d265deab, type: 3}
   systemLanguageType: 37
+  LanguageFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

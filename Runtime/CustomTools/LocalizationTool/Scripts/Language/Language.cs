@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 [CreateAssetMenu(
     fileName = "New Language",
@@ -12,4 +13,6 @@ public class Language : ScriptableObject
     public Sprite Icon;
 
     public SystemLanguage systemLanguageType;
+
+    public TMP_FontAsset LanguageFontAsset;
 }
