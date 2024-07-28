@@ -25,6 +25,9 @@ use `https://github.com/ertanturan/Unity-Localization.git` in unity package mana
 3. Set Languae Orientation (LTR : Left to right and RTL: Righ to Left)
 4. Set language font
 
+## To Create a new Alphabet
+1. Pretty much follow the new language steps above just with "Alphabet" option instead
+
 ## To create language-dependent text/sprite/video
 1. Right Click `Create>>Localization>>(Language Dependent Text/Sprite/Video)`
 2. Set size for your language dependent item (I used Language dependent text for demonstration). Size indicates how many language that your text gonna be able to be translated .
