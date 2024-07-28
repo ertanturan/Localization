@@ -19,6 +19,7 @@ RTL : Right To Left
 !! ATTENTION !! 
 The release package is installed and set for 3 languages : Turkish , English and Arabic . The installation process below is for the ones who would like to add more languages to their system .
 
+# Usage
 
 1. Create `Assets/Resources/Data/Localization` folder if doesn't exists already.
 2. Under Localization Folder >> Create 3 Folders named `AlphabetFontMatrix` , `Alphabets` and `Languages` if doesn't exits already.
@@ -31,9 +32,8 @@ The release package is installed and set for 3 languages : Turkish , English and
 8. Set alphabet and its font in this matrix . (e.g. Latin Alphabet , MyriadPro-Regular SDF(TMP_FontAsset) ).
 9. Under `Languages` folder `>> Right Click >> Create >> Localization >> Language` and set its Alphabet, Name , Icon and compatible system language text. (Repeat this step for as many language you would like to add in to your project.)
 
-## Usage
 
-1. Right `Click>>Create>>Localization>>(Language Dependent Text/Sprite/Video)`
+1. Right Click `Create>>Localization>>(Language Dependent Text/Sprite/Video)`
 2. Set size for your language dependent item (I used Language dependent text for demonstration). Size indicates how many language that your text gonna be able to be translated .
 3. Drag and drop your previously created language items froum your resources folder (If can't be found please proceed to the installation above)
 4. Set content for your text .

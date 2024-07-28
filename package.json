@@ -8,5 +8,8 @@
     "name": "Ertan Turan",
     "email": "ertanturan@outlook.com",
     "url": "https://github.com/ertanturan"
+  },
+  "dependencies": {
+    "com.unity.textmeshpro": "2.1.0"
   }
 }
