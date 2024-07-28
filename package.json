@@ -11,5 +11,13 @@
   },
   "dependencies": {
     "com.unity.textmeshpro": "2.1.0"
-  }
+  },
+  "keywords": [
+    "localization",
+    "RTL",
+    "unity",
+    "language",
+    "right to left",
+    "left to right"
+  ]
 }
