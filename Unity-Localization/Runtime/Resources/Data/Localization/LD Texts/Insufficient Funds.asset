@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58de167711e51f409ea78f5c283d765, type: 3}
+  m_Name: Insufficient Funds
+  m_EditorClassIdentifier: 
+  texts:
+  - Language: {fileID: 11400000, guid: 6394d1628b6d54c4e99bdc8a46ba6958, type: 2}
+    Text: Insufficient Funds
+  - Language: {fileID: 11400000, guid: 0d8fa10550d38b8458ac95c26c944277, type: 2}
+    Text: Yetersiz Para
+  - Language: {fileID: 11400000, guid: e869312b827934b4c9218de2cfdd4967, type: 2}
+    Text: "\u0631\u0635\u064A\u062F \u063A\u064A\u0631 \u0643\u0627\u0641"
